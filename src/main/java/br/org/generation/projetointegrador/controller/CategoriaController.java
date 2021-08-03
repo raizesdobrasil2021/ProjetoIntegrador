@@ -43,11 +43,11 @@ public class CategoriaController {
 				.findAllByDescricaoContainingIgnoreCase(descricao));
 	}
 	
-	/*@GetMapping("/ativo/{ativo}")
-	public ResponseEntity<List<Categoria>> getAtivo(@PathVariable boolean ativo){
+	@GetMapping("/ativo/{ativo}")
+	public ResponseEntity<List<Categoria>> getAtivo(@PathVariable Boolean ativo){
 		return ResponseEntity.ok(categoriaRepository
-				.findAllByAtivoContainingIgnoreCase(ativo));
-	}*/
+				.findByAtivo(ativo));
+	}
 	
 	
 	@PostMapping

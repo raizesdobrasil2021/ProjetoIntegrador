@@ -10,6 +10,6 @@ import br.org.generation.projetointegrador.model.Categoria;
 @Repository
 public interface CategoriaRepository extends JpaRepository<Categoria, Long>{
 	public List<Categoria> findAllByDescricaoContainingIgnoreCase(String descricao);
-	//public List<Categoria> findAllByAtivoContainingIgnoreCase(boolean ativo);
+	public List<Categoria> findByAtivo(Boolean ativo);
 	
 }

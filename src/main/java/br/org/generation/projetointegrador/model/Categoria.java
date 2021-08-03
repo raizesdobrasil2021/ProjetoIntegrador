@@ -15,11 +15,11 @@ public class Categoria {
 	private long id;
 	
 	@NotNull
-	@Size(min = 5, max = 50)
+	@Size(min = 5, max = 300)
 	private String descricao;
 	
 	@NotNull
-	private boolean ativo;
+	private Boolean ativo;
 	
 	@Size(min = 5, max =  50)
 	private String palavraChave;
@@ -40,11 +40,11 @@ public class Categoria {
 		this.descricao = descricao;
 	}
 
-	public boolean isAtivo() {
+	public Boolean isAtivo() {
 		return ativo;
 	}
 
-	public void setAtivo(boolean ativo) {
+	public void setAtivo(Boolean ativo) {
 		this.ativo = ativo;
 	}
 
