@@ -30,7 +30,7 @@ public class Usuario {
 	private String senha;
 	
 	@NotNull(message = "Este atribulo é obrigatório!")
-	private boolean vendedor;
+	private String vendedor;
 
 	public long getId() {
 		return id;
@@ -64,11 +64,13 @@ public class Usuario {
 		this.senha = senha;
 	}
 
-	public boolean isVendedor() {
+	public String getVendedor() {
 		return vendedor;
 	}
 
-	public void setVendedor(boolean vendedor) {
+	public void setVendedor(String vendedor) {
 		this.vendedor = vendedor;
 	}
+	
+
 }

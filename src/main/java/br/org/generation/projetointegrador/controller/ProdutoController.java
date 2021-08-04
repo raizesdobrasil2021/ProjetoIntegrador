@@ -1,5 +1,6 @@
 package br.org.generation.projetointegrador.controller;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,6 +42,15 @@ public class ProdutoController {
 	@GetMapping("/nome/{nome}")
 	public ResponseEntity<List<Produto>> getByNome(@PathVariable String nome){
 		return ResponseEntity.ok(produtoRepository.findAllByNomeContainingIgnoreCase(nome));
+	}
+	
+	@GetMapping("/menor-preco/{preco}")
+	public ResponseEntity<List<Produto>> getByMenorPreco(@PathVariable BigDecimal preco){
+		return ResponseEntity.ok(produtoRepository.findByPrecoLessThanEqual(preco));
+	}
+	@GetMapping("/entre-preco/{preco1}/{preco2}")
+	public ResponseEntity<List<Produto>> getByEntrePreco(@PathVariable BigDecimal preco1, @PathVariable BigDecimal preco2){
+		return ResponseEntity.ok(produtoRepository.findByPrecoBetween(preco1, preco2));
 	}
 	
 	@PostMapping
