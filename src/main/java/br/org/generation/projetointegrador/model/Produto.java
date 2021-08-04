@@ -1,7 +1,7 @@
 package br.org.generation.projetointegrador.model;
 
 import java.math.BigDecimal;
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,6 +12,7 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
@@ -34,6 +35,7 @@ public class Produto {
 	private BigDecimal preco;
 	
 	@NotNull(message = "Este atributo é obrigatório!")
+	@JsonFormat(pattern = "dd-mm-yyyy")
 	private Date dtValidade;
 	
 	@ManyToOne

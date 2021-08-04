@@ -9,6 +9,6 @@ import br.org.generation.projetointegrador.model.Produto;
 @Repository
 public interface ProdutoRepository extends JpaRepository<Produto, Long>{
 	
-	public List<Produto>findAllByNomeContainigIgnoreCase(String nome);
+	public List<Produto>findAllByNomeContainingIgnoreCase(String nome);
 	
 }
