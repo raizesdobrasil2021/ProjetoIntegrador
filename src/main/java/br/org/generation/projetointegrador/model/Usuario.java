@@ -1,13 +1,22 @@
 package br.org.generation.projetointegrador.model;
 
+import java.time.LocalDate;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "tb_usuarios")
@@ -23,7 +32,7 @@ public class Usuario {
 	
 	@NotNull(message = "Este atribulo é obrigatório!")
 	@Email
-	private String email;
+	private String usuario;
 	
 	@NotNull(message = "Este atribulo é obrigatório!")
 	@Size(min = 8)
@@ -31,6 +40,23 @@ public class Usuario {
 	
 	@NotNull(message = "Este atribulo é obrigatório!")
 	private String vendedor;
+	
+	@Column(name = "dt_nascimento")
+	@JsonFormat(pattern="yyyy-MM-dd")
+    private LocalDate dataNascimento;
+	
+	@OneToMany(mappedBy = "usuario " , cascade = CascadeType.REMOVE)
+	@JsonIgnoreProperties("usuario")
+	private List<Produto> produto;
+	
+	
+	public LocalDate getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(LocalDate dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
 
 	public long getId() {
 		return id;
@@ -48,12 +74,12 @@ public class Usuario {
 		this.nome = nome;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getUsuario() {
+		return usuario;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEmail(String usuario) {
+		this.usuario = usuario;
 	}
 
 	public String getSenha() {
