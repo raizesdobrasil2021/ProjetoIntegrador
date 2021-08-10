@@ -45,9 +45,9 @@ public class Usuario {
 	@JsonFormat(pattern="yyyy-MM-dd")
     private LocalDate dataNascimento;
 	
-	@OneToMany(mappedBy = "usuario " , cascade = CascadeType.REMOVE)
+	@OneToMany(mappedBy = "usuario" , cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
-	private List<Produto> produto;
+	private List <Produto> produto;
 	
 	
 	public LocalDate getDataNascimento() {
@@ -96,6 +96,18 @@ public class Usuario {
 
 	public void setVendedor(String vendedor) {
 		this.vendedor = vendedor;
+	}
+
+	public List<Produto> getProduto() {
+		return produto;
+	}
+
+	public void setProduto(List<Produto> produto) {
+		this.produto = produto;
+	}
+
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
 	}
 	
 
