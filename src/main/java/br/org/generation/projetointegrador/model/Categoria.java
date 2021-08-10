@@ -20,11 +20,11 @@ public class Categoria {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@NotNull
+	@NotNull (message = "Este atributo descricao é obrigatorio!")
 	@Size(min = 5, max = 300)
 	private String descricao;
 	
-	@NotNull
+	@NotNull(message = "Este atributo ativo é obrigatorio!")
 	private Boolean ativo;
 	
 	@Size(min = 5, max =  50)

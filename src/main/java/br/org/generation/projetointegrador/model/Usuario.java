@@ -26,20 +26,20 @@ public class Usuario {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@NotNull(message = "Este atribulo é obrigatório!")
+	@NotNull(message = "Este atributo nome é obrigatorio!")
 	@Size(max = 100)
 	private String nome;
 	
-	@NotNull(message = "Este atribulo é obrigatório!")
+	@NotNull(message = "Este atributo usuario é obrigatório!")
 	@Email
 	private String usuario;
 	
-	@NotNull(message = "Este atribulo é obrigatório!")
+	@NotNull(message = "Este atributo senha é obrigatório!")
 	@Size(min = 8)
 	private String senha;
 	
-	@NotNull(message = "Este atribulo é obrigatório!")
-	private String vendedor;
+	@NotNull(message = "Este atributo tipo é obrigatório!")
+	private String tipo;
 	
 	@Column(name = "dt_nascimento")
 	@JsonFormat(pattern="yyyy-MM-dd")
@@ -90,12 +90,13 @@ public class Usuario {
 		this.senha = senha;
 	}
 
-	public String getVendedor() {
-		return vendedor;
+	
+	public String getTipo() {
+		return tipo;
 	}
 
-	public void setVendedor(String vendedor) {
-		this.vendedor = vendedor;
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
 	}
 
 	public List<Produto> getProduto() {

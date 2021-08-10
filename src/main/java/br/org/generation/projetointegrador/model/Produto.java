@@ -23,18 +23,18 @@ public class Produto {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
-	@NotNull(message = "Este atributo é obrigatório!")
+	@NotNull(message = "Este atributo nome é obrigatório!")
 	private String nome;
 	
-	@NotNull(message = "Este atributo é obrigatório!")
+	@NotNull(message = "Este atributo quantidade é obrigatório!")
 	@Positive
 	private int quantidade;
 	
-	@NotNull(message = "Este atributo é obrigatório!")
+	@NotNull(message = "Este atributo  preco é obrigatório!")
 	@Positive
 	private BigDecimal preco;
 	
-	@NotNull(message = "Este atributo é obrigatório!")
+	@NotNull(message = "Este atributo dtValidade é obrigatório!")
 	@JsonFormat(pattern = "dd-mm-yyyy")
 	private Date dtValidade;
 	
