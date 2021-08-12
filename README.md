@@ -10,9 +10,9 @@
 
 
 ## Desenvolvido por 
-[![Badge](https://img.shields.io/badge/-Felipe-green?style=flat-square&labelColor=black&logo=github&logoColor=white&link=https://github.com/kendy09)](https://github.com/kendy09)
-[![Badge](https://img.shields.io/badge/-Jessica-green?style=flat-square&labelColor=black&logo=github&logoColor=white&link=https://github.com/jehdiscola)](https://github.com/jehdiscola)
-[![Badge](https://img.shields.io/badge/-Wesley-green?style=flat-square&labelColor=black&logo=github&logoColor=white&link=https://github.com/DevWesleys)](https://github.com/DevWesleys)
+
+[![Badge](https://img.shields.io/badge/-Felipe-green?style=flat-square&labelColor=black&logo=github&logoColor=white&link=https://github.com/kendy09)](https://github.com/kendy09)[![Badge](https://img.shields.io/badge/-Igor-green?style=flat-square&labelColor=black&logo=github&logoColor=white&link=https://github.com/ihmorais)](https://github.com/ihmorais)[![Badge](https://img.shields.io/badge/-Jessica-green?style=flat-square&labelColor=black&logo=github&logoColor=white&link=https://github.com/jehdiscola)](https://github.com/jehdiscola)[![Badge](https://img.shields.io/badge/-Milena-green?style=flat-square&labelColor=black&logo=github&logoColor=white&link=https://github.com/micouti)](https://github.com/micouti)[![Badge](https://img.shields.io/badge/-Wesley-green?style=flat-square&labelColor=black&logo=github&logoColor=white&link=https://github.com/DevWesleys)](https://github.com/DevWesleys
+
 
 
 
