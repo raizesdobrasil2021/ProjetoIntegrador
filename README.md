@@ -11,6 +11,8 @@ https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoC
 https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=Swagger&logoColor=white
 
 ## Desenvolvido por 
-[![Badge](https://img.shields.io/badge/-Jessica-purple?style=flat-square&labelColor=black&logo=github&logoColor=white&link=https://github.com/jehdiscola)](https://github.com/jehdiscola) [!
+[![Badge](https://img.shields.io/badge/-Jessica-green?style=flat-square&labelColor=black&logo=github&logoColor=white&link=https://github.com/jehdiscola)](https://github.com/jehdiscola)
+
+
 
 
