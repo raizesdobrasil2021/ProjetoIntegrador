@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+.alinhamento {
+    justify-content: center;
+}
+
+h1 {
+    color: #1c372c;
+    font-family: 'Poppins', sans-serif;
+}
+
+label {
+    color: #1c372c;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    color: #1c372c;
+    font-family: 'Poppins', sans-serif;
+}
