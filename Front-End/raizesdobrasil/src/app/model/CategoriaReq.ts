@@ -1,4 +1,4 @@
-import { ProdutoReq } from './Produto';
+import { ProdutoReq } from './ProdutoReq';
 
 export class CategoriaReq {
 

@@ -1,6 +1,6 @@
 
-import { UsuarioReq } from './Usuario';
-import { CategoriaReq } from './Categoria';
+import { UsuarioReq } from './UsuarioReq';
+import { CategoriaReq } from './CategoriaReq';
 export class ProdutoReq {
 
     public id: number;

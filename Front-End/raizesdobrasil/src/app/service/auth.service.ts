@@ -2,12 +2,13 @@ import { UsuarioLogin } from './../model/UsuarioLogin';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { UsuarioReq } from '../model/Usuario';
+import { UsuarioReq } from '../model/UsuarioReq';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
+  [x: string]: any;
 
   constructor(
     private http: HttpClient

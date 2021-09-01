@@ -10,49 +10,54 @@
 
                 <div class="form-group">
                     <label for="nome">Nome</label>
-                    <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome completo">
+                    <input [(ngModel)]="usuario.nome" class="form-control" type="text" name="nome" id="nome"
+                        placeholder="Digite o seu nome completo">
                 </div>
 
                 <div class="form-group">
                     <label for="usuario">Usuario</label>
-                    <input class="form-control" type="text" name="usuario" id="usuario" placeholder="Digite o seu nome de usuario">
+                    <input [(ngModel)]="usuario.usuario" class="form-control" type="email" name="usuario" id="usuario"
+                        placeholder="Digite o seu email">
                 </div>
 
                 <div class="form-group">
                     <label for="senha">Senha</label>
-                    <input class="form-control" type="password" name="senha" id="senha" placeholder="Digite a sua senha">
+                    <input (input)="confirmSenha($event)" class="form-control " type="password" name="senha "
+                        id="senha " placeholder="Digite a sua senha ">
                 </div>
 
-                <div class="form-group">
-                    <label for="confirmSenha">Confirmar senha</label>
-                    <input class="form-control" type="password" name="confirmSenha" id="confirmSenha" placeholder="Digite a sua senha novamente">
-                </div>
 
-                <div class="form-group">
-                    <label for="dataNasc">Data de Nascimento</label>
-                    <input class="form-control" type="date" name="dataNasc" id="dataNasc">
-                </div>
-
-                <div class="form-group">
-                    <label for="tipo">Selecione o tipo de usuário</label>
-                    <select name="tipo" id="tipo" class="form-control">
-                            <option>Escolha um tipo de usuário</option>
-                            <option value="normal">Vendedor</option>
-                            <option value="admin">Usuário Comum</option>
-                        </select>
-                </div>
-
-                <div class="d-flex justify-content-around">
-                    <button type="submit" class="btn btn-outline-danger  mr-5 px-5" routerLink="/login">
-                            Cancelar
-                        </button>
-                    <button type=" submit " class="btn btn-outline-info px-5 ">
-                            Cadastrar
-                        </button>
-                </div>
-
+            <div class="form-group">
+                <label for="confirmSenha">Confirmar senha</label>
+                <input [(ngModel)]="usuario.senha" class="form-control" type="password" name="confirmSenha"
+                    id="confirmSenha" placeholder="Digite a sua senha novamente">
             </div>
+
+            <div class="form-group">
+                <label for="dataNasc">Data de Nascimento</label>
+                <input [(ngModel)]="usuario.dataNascimento" class="form-control" type="date" name="dataNasc"
+                    id="dataNasc">
+            </div>
+
+            <div class="form-group">
+                <label for="tipo">Selecione o tipo de usuário</label>
+                <select name="tipo" id="tipo" class="form-control" (change)="tipoUser($event)">
+                    <option>Escolha um tipo de usuário</option>
+                    <option value="normal">Vendedor</option>
+                    <option value="admin">Usuário Comum</option>
+                </select>
+            </div>
+
+            <div class="d-flex justify-content-around">
+                <button type="submit" class="btn btn-outline-danger  mr-5 px-5" routerLink="/login">
+                    Cancelar
+                </button>
+                <button type=" submit " class="btn btn-outline-info px-5 " (click)="cadastrar()">
+                    Cadastrar
+                </button>
+            </div>
+
         </div>
     </div>
 </div>
-
+</div>
