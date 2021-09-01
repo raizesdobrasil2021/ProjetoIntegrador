@@ -1,6 +1,6 @@
 import { ProdutoReq } from './Produto';
 
-export class Categoria {
+export class CategoriaReq {
 
   public id: number;
   public ativo: boolean;

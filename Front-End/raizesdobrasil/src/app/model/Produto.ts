@@ -1,6 +1,6 @@
 
 import { UsuarioReq } from './Usuario';
-import { Categoria } from './Categoria';
+import { CategoriaReq } from './Categoria';
 export class ProdutoReq {
 
     public id: number;
@@ -8,5 +8,5 @@ export class ProdutoReq {
     public preco: number;
     public quantidade: number;
     public usuario: UsuarioReq;
-    public categoria: Categoria;
+    public categoria: CategoriaReq;
 }
